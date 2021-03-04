@@ -10664,3 +10664,7 @@ form .row:first-child .floating-label-form-group {
 .rotate {
   animation: rotation 30s infinite linear;
 }
+
+.img-language-icon {
+  width: 50px;
+}

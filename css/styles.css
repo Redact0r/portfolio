@@ -3134,11 +3134,11 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #1abc9c;
+  color: #fff;
   text-decoration: none;
 }
 .btn-link:hover {
-  color: #117964;
+  color: #2c3e50;
   text-decoration: underline;
 }
 .btn-link:focus,

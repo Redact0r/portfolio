@@ -78,4 +78,8 @@
         $(this).removeClass("floating-label-form-group-with-focus");
       });
   });
+
+  $("#resume-btn").click(function () {
+    window.open("http://www.w3schools.com");
+  });
 })(jQuery); // End of use strict

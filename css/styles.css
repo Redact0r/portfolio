@@ -506,6 +506,11 @@ mark,
   height: auto;
 }
 
+.img-fluid-shrink {
+  padding: 0.2rem;
+  margin-bottom: -3px;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -2094,7 +2099,6 @@ pre code {
 }
 .form-control:focus {
   color: #495057;
-  background-color: #fff;
   border-color: #6bebd1;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(26, 188, 156, 0.25);
@@ -10549,7 +10553,8 @@ a.text-dark:focus {
     font-size: 1.5rem;
   }
 }
-.portfolio .portfolio-item {
+.portfolio .portfolio-item,
+.skill-item {
   cursor: pointer;
   position: relative;
   display: block;
@@ -10557,6 +10562,7 @@ a.text-dark:focus {
   border-radius: 0.5rem;
   overflow: hidden;
 }
+
 .portfolio .portfolio-item .portfolio-item-caption {
   position: absolute;
   top: 0;
@@ -10667,4 +10673,68 @@ form .row:first-child .floating-label-form-group {
 
 .img-language-icon {
   width: 50px;
+}
+
+@keyframes skill-item {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@keyframes glow-btn-animation {
+  0% {
+    box-shadow: 0 0 -10px #2c3e50;
+  }
+  40% {
+    box-shadow: 0 0 20px #2c3e50;
+  }
+  60% {
+    box-shadow: 0 0 20px #2c3e50;
+  }
+  100% {
+    box-shadow: 0 0 -10px #2c3e50;
+  }
+}
+
+.skill-item-caption-content:hover {
+  cursor: auto;
+  animation: skill-item 2.5s infinite;
+}
+
+.glow-btn-animation {
+  animation: glow-btn-animation 2s 3;
+}
+
+.glow-btn-animation:hover {
+  background: #dae0e5;
 }
